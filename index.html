@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Formulario de datos</title>
+</head>
+<body  >
+      <h1 ALIGN="CENTER"> FORMULARIO </h1>
+      <table ALIGN="CENTER">
+            <form action="" onsubmit="return false" >
+         <tr>
+           <td><label for="name">Nombre :</label></td>
+           <td><input class="all" type="text" id="name" required=""></td>
+        </tr>
+         <tr>
+           <td><label for="apellido">Apellido :</label></td>
+           <td><input class="all" type="text" id="apellido" required=""></td>
+         </tr>
+         <tr>
+           <td><label for="dni"> DNI :</label></td>
+           <td><input class="all" type="text" id="dni" required="" pattern="[0-9]{8}" ></td>
+         </tr>
+         <tr>
+           <td><label for="direccion"> Direccion :</label></td>
+           <td><input class="all" type="text" id="direccion" required=""  ></td>
+         </tr>
+         <tr ALIGN="CENTER">
+           <td><button type="submit"  name="Enviar" onClick="enviar(); "> Enviar </button></td>
+         </tr>
+       </form>
+     </table>  
+    <div id="mostrar" > </div>
+<script src="assets/js/main.js" ></script>
+</body>
+</html>
